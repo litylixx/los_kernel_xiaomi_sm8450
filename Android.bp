@@ -1,4 +1,5 @@
 soong_namespace {
+    imports: ["kernel/xiaomi/sm8450"]
 }
 
 cc_binary_host {
