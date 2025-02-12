@@ -683,9 +683,7 @@ static int cnss_get_bdf_file_name(struct cnss_plat_data *plat_priv,
 	int ret = 0;
 	uint32_t hw_platform_ver = 0;
 	uint32_t hw_country_ver = 0;
-	hw_country_ver = get_hw_country_version();
-	hw_platform_ver = get_hw_version_platform();
-
+	
 	switch (bdf_type) {
 	case CNSS_BDF_ELF:
 		/* Board ID will be equal or less than 0xFF in GF mask case */

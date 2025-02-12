@@ -2412,7 +2412,6 @@ static void xiaomi_touch_init(struct goodix_ts_core *ts_core)
 
 static void xiaomi_touch_deinit(struct goodix_ts_core *ts_core)
 {
-	unregister_xiaomi_touch_client(TOUCH_ID_PRIMARY);
 }
 
 #if defined(CONFIG_DRM)

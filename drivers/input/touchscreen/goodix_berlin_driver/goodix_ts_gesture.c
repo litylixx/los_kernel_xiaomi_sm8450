@@ -262,7 +262,6 @@ static int gsx_gesture_ist(struct goodix_ts_core *cd,
 	case GOODIX_GESTURE_SINGLE_TAP:
 		if (cd->gesture_type & GESTURE_SINGLE_TAP) {
 			ts_info("get SINGLE-TAP gesture");
-			notify_oneshot_sensor(ONESHOT_SENSOR_SINGLE_TAP, 1);
 		} else {
 			ts_debug("not enable SINGLE-TAP");
 		}
@@ -270,7 +269,6 @@ static int gsx_gesture_ist(struct goodix_ts_core *cd,
 	case GOODIX_GESTURE_DOUBLE_TAP:
 		if (cd->gesture_type & GESTURE_DOUBLE_TAP) {
 			ts_info("get DOUBLE-TAP gesture");
-			notify_oneshot_sensor(ONESHOT_SENSOR_DOUBLE_TAP, 1);
 		} else {
 			ts_debug("not enable DOUBLE-TAP");
 		}
@@ -278,7 +276,6 @@ static int gsx_gesture_ist(struct goodix_ts_core *cd,
 	case GOODIX_GESTURE_FOD_DOWN:
 		if (cd->gesture_type & GESTURE_FOD_PRESS) {
 			ts_info("get FOD-DOWN gesture");
-			notify_oneshot_sensor(ONESHOT_SENSOR_FOD_PRESS, 1);
 		} else {
 			ts_debug("not enable FOD-DOWN");
 		}
@@ -286,7 +283,6 @@ static int gsx_gesture_ist(struct goodix_ts_core *cd,
 	case GOODIX_GESTURE_FOD_UP:
 		if (cd->gesture_type & GESTURE_FOD_PRESS) {
 			ts_info("get FOD-UP gesture");
-			notify_oneshot_sensor(ONESHOT_SENSOR_FOD_PRESS, 0);
 		} else {
 			ts_debug("not enable FOD-UP");
 		}
