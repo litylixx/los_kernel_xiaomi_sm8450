@@ -1020,8 +1020,6 @@ static int icnss_get_bdf_file_name(struct icnss_priv *priv,
 
 	uint32_t hw_platform_ver = 0;
 	uint32_t hw_country_ver = 0;
-	hw_country_ver = get_hw_country_version();
-	hw_platform_ver = get_hw_version_platform();
 
 	switch (bdf_type) {
 	case ICNSS_BDF_ELF:

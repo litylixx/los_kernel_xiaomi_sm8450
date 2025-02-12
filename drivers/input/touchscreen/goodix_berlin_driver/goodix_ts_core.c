@@ -2407,7 +2407,6 @@ static void xiaomi_touch_init(struct goodix_ts_core *ts_core)
 	ts_core->xiaomi_touch.set_mode_value = goodix_set_cur_value;
 	ts_core->xiaomi_touch.get_mode_value = goodix_get_mode_value;
 	ts_core->xiaomi_touch.private = ts_core;
-	register_xiaomi_touch_client(TOUCH_ID_PRIMARY, &ts_core->xiaomi_touch);
 }
 
 static void xiaomi_touch_deinit(struct goodix_ts_core *ts_core)
